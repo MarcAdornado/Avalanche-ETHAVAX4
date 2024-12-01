@@ -13,8 +13,11 @@ Burning: Any token holder can burn their own tokens, reducing the total supply.
 Item Redemption:Users can redeem tokens for in-game items using the redeemItem function.
 
 Available items and their costs:
+
   *KARAMBIT: 20 tokens
+  
   *AK-47: 15 tokens
+  
   *M4A1-S: 10 tokens
   
 Inventory Tracking: The contract maintains an inventory for each user, recording the items they have redeemed.
