@@ -1,3 +1,5 @@
+//202110010@fit.edu.ph
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
@@ -25,6 +27,7 @@ contract degenToken is ERC20, Ownable {
     function transferToken(address destination, uint256 amount) public {
         _transfer(msg.sender, destination, amount);
     }
+
     function redeemItem(string memory item) external  {
         uint256 cost = purchaseItem[item];
         require(cost > 0, "Invalid item");
