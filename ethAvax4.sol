@@ -14,6 +14,10 @@ contract degenToken is ERC20, Ownable {
         purchaseItem["M4A1-S"] = 10;
     }
 
+    function decimals() public view virtual override returns (uint8) {
+        return 0;
+    }
+
     function mint(address destination, uint256 amount) external onlyOwner {
         _mint(destination, amount);
     }
